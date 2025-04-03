@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Brick Breaker</h1>
+        <button id="startGame">Start Game</button>
+        <button id="levelSelect">Level Select</button>
+        <button id="toggleMusic">Toggle Music</button> <!-- Add toggle music button -->
+    </div>
+    <div id="levelMenu" class="hidden">
+        <h1>Select Level</h1>
+        <div id="levels"></div>
+        <button id="backToMenu">Back</button>
+    </div>
+    <canvas id="gameCanvas" class="hidden"></canvas>
+    <script src="game.js"></script>
+    <script>
+        const toggleMusicButton = document.getElementById('toggleMusic');
+        toggleMusicButton.addEventListener('click', toggleMusic); // Add event listener for the toggle music button
+    </script>
+</body>
+</html>

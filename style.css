@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+canvas {
+    display: block;
+    border: 2px solid #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+#menu, #levelMenu {
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0095DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #007ACC;
+}
